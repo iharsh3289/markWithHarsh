@@ -1,0 +1,36 @@
+<div class="container-fluid" id="otp-verify-container">
+    <div class="row signup-form-header-row">
+        <div class="col-xs-12 header-row signup-form-header typewriter-sm">
+            <h2>Verify OTP</h2>
+        </div>
+    </div>
+     <div class="row messages">
+        <div class="col-xs-8">
+            <ul id="messages-list">
+                <li id="message"></li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div class="col-xs-4"> </div>
+    <div class="container-fluid signup-form-content-row">
+        <div class="content-row signup-form-content">
+            <form class="signup-form col-xs-4">
+                <label>Enter One Time Password</label>
+                <div class="form-group email">
+                    <input type="email" id="email" name="email" value={{email}} disabled >
+                </div>
+                <label>Enter One Time Password</label>
+                <div class="form-group otp">
+                    <input type="text" id="otp" name="otp" placeholder="Enter You OTP" minlength="4" maxlength="4"required>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Create Account</button>
+                <button id="resendotp" class="btn btn-primary">Resend OTP</button>
+            </form>
+        </div>
+    </div>
+    <br />
+</div>
+</div>
+<script src="../js/verifyotp.js"></script>
